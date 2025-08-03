@@ -1,0 +1,149 @@
+.companies-page {
+  min-height: 100vh;
+  background-color: #000;
+  padding: 48px 0;
+}
+
+.companies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
+.companies-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.companies-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.companies-header p {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Companies Grid */
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.company-card {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.company-card:hover {
+  border-color: #22d3ee;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.1);
+}
+
+.company-header {
+  margin-bottom: 20px;
+}
+
+.company-avatar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.company-avatar-large {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(34, 211, 238, 0.3));
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #22d3ee;
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.company-info {
+  flex: 1;
+}
+
+.company-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.company-description {
+  color: #9ca3af;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.company-details {
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.detail-icon {
+  font-size: 16px;
+  margin-right: 8px;
+  color: #22d3ee;
+}
+
+.detail-text {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.company-footer {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.company-footer .btn {
+  flex: 1;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .companies-header h1 {
+    font-size: 2rem;
+  }
+
+  .companies-header p {
+    font-size: 1rem;
+  }
+
+  .companies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .company-footer {
+    flex-direction: column;
+  }
+}

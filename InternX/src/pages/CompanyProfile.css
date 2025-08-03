@@ -1,0 +1,139 @@
+.company-profile-page {
+  min-height: 100vh;
+  background-color: #000;
+  padding: 48px 0;
+}
+
+.company-profile-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.company-profile-card {
+  background-color: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  padding: 32px;
+}
+
+.company-profile-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.company-avatar-xl {
+  width: 96px;
+  height: 96px;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(34, 211, 238, 0.3));
+  border: 2px solid #22d3ee;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #22d3ee;
+  font-size: 48px;
+  margin: 0 auto 16px auto;
+}
+
+.company-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.company-industry {
+  color: #22d3ee;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.company-profile-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detail-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #22d3ee;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.detail-value {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+
+.detail-value.description {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.contact-link {
+  color: #22d3ee;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #06b6d4;
+}
+
+.company-profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+  border-top: 1px solid #374151;
+}
+
+.not-found {
+  text-align: center;
+  padding: 64px 32px;
+}
+
+.not-found h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.not-found p {
+  color: #9ca3af;
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .company-profile-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .company-profile-actions {
+    flex-direction: row;
+  }
+}
